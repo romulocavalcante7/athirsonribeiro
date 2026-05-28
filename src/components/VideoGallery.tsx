@@ -28,7 +28,7 @@ export default function VideoGallery() {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <h2 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="font-serif text-4xl md:text-6xl font-bold tracking-widest text-white text-glow uppercase mb-4">
             Galeria de Vídeos
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-2xl">

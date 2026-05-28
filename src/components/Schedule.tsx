@@ -23,7 +23,7 @@ export default function Schedule() {
           className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
         >
           <div>
-            <h2 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
+            <h2 className="font-serif text-4xl md:text-6xl font-bold tracking-widest text-white text-glow uppercase mb-4">
               Próximos Shows
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl">

@@ -18,7 +18,7 @@ export default function History() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <h2 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="font-serif text-4xl md:text-6xl font-bold tracking-widest text-white text-glow uppercase mb-4">
             A Trajetória de um Sonhador
           </h2>
           <div className="w-24 h-1 gold-gradient mx-auto rounded-full"></div>

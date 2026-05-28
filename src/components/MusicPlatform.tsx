@@ -23,7 +23,7 @@ export default function MusicPlatform() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-4xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="font-serif text-4xl md:text-6xl font-bold tracking-widest text-white text-glow uppercase mb-4">
             Sons da Alma
           </h2>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-6">

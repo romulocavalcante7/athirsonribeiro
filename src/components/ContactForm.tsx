@@ -21,7 +21,7 @@ export default function ContactForm() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="font-serif text-4xl md:text-6xl font-bold tracking-widest text-white text-glow uppercase mb-6">
             Leve o Show para Sua Cidade
           </h2>
           <div className="w-24 h-1 gold-gradient mx-auto rounded-full mb-8"></div>

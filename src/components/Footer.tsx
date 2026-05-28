@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="w-full bg-[#050505] pt-20 pb-10 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="font-serif text-3xl text-white mb-8 tracking-widest uppercase">
+          <h2 className="font-serif text-3xl font-bold text-white mb-8 tracking-widest uppercase text-glow">
             Athirson Ribeiro
           </h2>
 
