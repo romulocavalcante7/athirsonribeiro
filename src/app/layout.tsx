@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Cinzel } from "next/font/google";
+import { Inter, Cinzel, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
@@ -16,6 +16,12 @@ const cinzel = Cinzel({
   subsets: ["latin"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Athirson Ribeiro Oficial | A Voz do Nordeste",
   description: "Plataforma oficial do cantor Athirson Ribeiro. Da grandiosidade da Serra da Capivara para os maiores palcos do país.",
@@ -29,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${cinzel.variable} scroll-smooth antialiased bg-black text-white`}
+      className={`${inter.variable} ${cinzel.variable} ${playfair.variable} scroll-smooth antialiased bg-black text-white`}
     >
       <body className="min-h-full flex flex-col font-sans overflow-x-hidden selection:bg-gold selection:text-black">
         <LoadingScreen />
