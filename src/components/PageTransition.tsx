@@ -15,10 +15,10 @@ export default function PageTransition({ children }: { children: React.ReactNode
       setIsNavigating(true);
       setSavedPath(pathname);
       
-      // Simula um tempinho de carregamento para mostrar o disco
+      // Simula um tempinho de carregamento mais rápido (300ms em vez de 800ms)
       const timer = setTimeout(() => {
         setIsNavigating(false);
-      }, 800);
+      }, 300);
       
       return () => clearTimeout(timer);
     }

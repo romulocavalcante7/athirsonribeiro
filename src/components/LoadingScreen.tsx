@@ -8,10 +8,10 @@ export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simula o tempo de carregamento da plataforma (2.5 segundos)
+    // Simula o tempo de carregamento da plataforma (mais rápido agora: 1.2s)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 1200);
     return () => clearTimeout(timer);
   }, []);
 
