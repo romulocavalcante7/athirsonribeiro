@@ -53,9 +53,9 @@ export default function Hero() {
 
         {/* Typewriter Text */}
         <div className="h-20 md:h-24 flex items-center justify-center mb-2">
-          <h1 className="font-serif text-3xl md:text-5xl font-bold tracking-wider text-white text-glow">
+          <h1 className="font-serif text-3xl md:text-5xl font-bold tracking-widest text-white text-glow uppercase">
             {displayedText}
-            <span className="animate-pulse inline-block ml-1">|</span>
+            <span className="animate-pulse inline-block ml-1 font-light opacity-50">|</span>
           </h1>
         </div>
 

@@ -8,21 +8,16 @@ import { useState, useEffect } from "react";
 export default function PageTransition({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [isNavigating, setIsNavigating] = useState(false);
-  const [savedPath, setSavedPath] = useState(pathname);
-
   useEffect(() => {
-    if (pathname !== savedPath) {
-      setIsNavigating(true);
-      setSavedPath(pathname);
-      
-      // Simula um tempinho de carregamento mais rápido (300ms em vez de 800ms)
-      const timer = setTimeout(() => {
-        setIsNavigating(false);
-      }, 300);
-      
-      return () => clearTimeout(timer);
-    }
-  }, [pathname, savedPath]);
+    setIsNavigating(true);
+    
+    // Mostra o disco rodando a cada mudança de rota
+    const timer = setTimeout(() => {
+      setIsNavigating(false);
+    }, 400);
+    
+    return () => clearTimeout(timer);
+  }, [pathname]);
 
   return (
     <>
